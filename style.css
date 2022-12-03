@@ -75,9 +75,7 @@ input:focus {
     position: relative;
     width: 100%;
     background: #00709F;
-    background: linear-gradient(107.56deg, #00709F, #00709F);
     border-radius: 0.4rem;
-    
     padding: 1.6rem;
     color: #FFFFFF;
     font-weight: 700;
@@ -97,12 +95,14 @@ input:focus {
 #btn-calculo:after {
     background-image: linear-gradient(107.56deg, #00DDFB 0%,  #00709F 100%);
     content: "";
-    display: flex;
+    display: block;
     height: 100%;
-    position: absolute;
-    top: 0; left: 0;
-    opacity: 0;
     width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    opacity: 0;
+    
     z-index: -1;
     transition: all 300ms linear;
 }
@@ -142,6 +142,7 @@ input:focus {
     opacity: 0;
     visibility: hidden;
     transition: all 400ms ease-out;
+    z-index: 2;
 }
 
 .modal.show {
@@ -156,13 +157,18 @@ input:focus {
     padding: 4.8rem 6.4rem 6.4rem;
     position: relative;
     border-radius: 0.6rem;
+
+    
+}
+
+.result h1 {
     color: #0C3440;
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 4rem;
     text-align: center;
-    
 }
+
 .img-close {
     position: absolute;
     top: 1.6rem;
@@ -170,8 +176,38 @@ input:focus {
     color: rgba(12, 52, 64, 0.6);
     cursor: pointer;
     transition: transform 0.4s;
+    z-index: 3;
 }
 .img-close:hover {
     transform: scale(1.2);
 }
 
+span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 425px){
+    .modal-box {
+        padding: 2rem;
+        width: 31rem;
+        margin: 0 1rem;
+        height: auto;
+    }
+    .result {
+        padding: 4rem 1.5rem;
+
+    }
+    .result h1 {
+
+        font-size: 2.3rem;
+    }
+
+    .title-1{
+        text-align: center;
+    }
+
+}
