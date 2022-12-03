@@ -75,7 +75,7 @@ input:focus {
     position: relative;
     width: 100%;
     background: #00709F;
-    //background: linear-gradient(107.56deg, #00709F, #00709F);
+    background: linear-gradient(107.56deg, #00709F, #00709F);
     border-radius: 0.4rem;
     
     padding: 1.6rem;
