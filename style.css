@@ -11,8 +11,9 @@ body {
     background-color: #040924;
     font-size: 1.6rem;
     display: grid;
-    place-items: center;
+    place-content: center;
     height: 100vh;
+
   
     
 }
@@ -28,8 +29,9 @@ body, input, button {
     padding: 4.8rem 6.4rem 6.4rem;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.4rem 0 #0000001A;
-    height: 44rem;
-    width: 42.6rem;
+    width: 42.8rem;
+
+
 
 }
 .modal-box div + div {
@@ -53,11 +55,8 @@ label {
 input::placeholder {
     color: rgba(73, 80, 87, 0.5);
     line-height: 2rem;
-    
-}
-input:focus {
-    outline: 2px solid #00709F;
-    
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 #input-weight, #input-height {
@@ -66,11 +65,17 @@ input:focus {
     border-radius: 0.4rem;
     background: #DCE2E9;
     line-height: 2rem;
-    color: #212529
-    
+    color: #212529;
+    border: 1px solid rgba(73, 80, 87, 0.3);
+    font-size: 1.6rem
+
 
 }
-
+#input-weight:focus, #input-height:focus {
+    background: linear-gradient(#DCE2E9, #DCE2E9) padding-box, linear-gradient(107.56deg, #00DDFB 100%, #00709F 100%);
+     
+ }
+ 
 #btn-calculo {
     position: relative;
     width: 100%;
@@ -124,7 +129,7 @@ input:focus {
     transform: translateY(-20rem);
     opacity: 0;
     visibility: hidden;
-    transition: transform 0.4s;
+    transition: transform 0.3s;
 }
 
 .alert-error.erro{
@@ -163,9 +168,10 @@ input:focus {
 
 .result h1 {
     color: #0C3440;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     font-weight: 700;
     text-align: center;
+
 }
 
 .img-close {
@@ -188,23 +194,3 @@ span {
 
 
 
-@media (max-width: 425px){
-    .modal-box {
-        padding: 2rem;
-        width: 100%;
-        height: auto;
-    }
-    .result {
-       padding: 2rem;
-
-    }
-    .result h1 {
-        margin: 1.8rem 0;
-        font-size: 2.3rem;
-    }
-
-    .title-1{
-        text-align: center;
-    }
-
-}
