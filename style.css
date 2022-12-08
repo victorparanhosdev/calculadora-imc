@@ -72,14 +72,21 @@ input::placeholder {
     line-height: 2rem;
     color: #212529;
     border: 1px solid rgba(73, 80, 87, 0.3);
-    font-size: 1.6rem
+    font-size: 1.6rem;
 
 
 }
-#input-weight:focus, #input-height:focus {
-    background: linear-gradient(#DCE2E9, #DCE2E9) padding-box, linear-gradient(107.56deg, #00DDFB 100%, #00709F 100%);
-     
- }
+
+
+
+#input-weight:focus, #input-height:focus{
+
+background: linear-gradient( #DCE2E9, #DCE2E9) padding-box, linear-gradient(90deg, #00DDFB 50%, #00709F 100%);
+   
+}
+
+
+
  
 #btn-calculo {
     position: relative;
