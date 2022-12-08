@@ -127,6 +127,7 @@ background: linear-gradient( #DCE2E9, #DCE2E9) padding-box, linear-gradient(90de
 #btn-calculo:hover:after {
     opacity: 1;
 }
+
 .alert-error{
     position: absolute;
     top: 0;
@@ -152,7 +153,8 @@ background: linear-gradient( #DCE2E9, #DCE2E9) padding-box, linear-gradient(90de
 
 .modal {
     position: absolute;
-    inset: 0;
+    height: 100vh;
+    width: 100vw;
     background: rgba(0, 0, 0, 0.7);
     display: grid;
     place-content: center;
