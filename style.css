@@ -31,7 +31,7 @@ body, input, button {
     padding: 4.8rem 6.4rem 6.4rem;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.4rem 0 #0000001A;
-    width: 42.8rem;
+    width: min(42.8rem, 98vw);
  
 
 }
@@ -160,14 +160,14 @@ background: linear-gradient( #DCE2E9, #DCE2E9) padding-box, linear-gradient(90de
     place-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: all 400ms ease-out;
+    transition: opacity 400ms ease-out;
     z-index: 2;
 }
 
 .modal.show {
     opacity: 1;
     visibility: visible;
-    transition: all 400ms ease-in;
+    transition: opacity 400ms ease-in;
 
 }
 
