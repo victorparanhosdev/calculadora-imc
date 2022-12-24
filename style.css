@@ -31,7 +31,7 @@ body, input, button {
     padding: 4.8rem 6.4rem 6.4rem;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.4rem 0 #0000001A;
-
+    width: min(42.8rem, 95vw);
 }
 .modal-box form{
    max-width: 30rem; 
@@ -177,9 +177,6 @@ background: linear-gradient( #DCE2E9, #DCE2E9) padding-box, linear-gradient(90de
     padding: 4.8rem 6.4rem 6.4rem;
     position: relative;
     border-radius: 0.6rem;
-
-
-
     
 }
 
@@ -212,9 +209,8 @@ span {
 
 
 @media (max-width: 500px){
-  
     .result {
-        padding: 5rem 4rem;
+        padding: 4rem;
     }
     .result h1 {
         font-size: 2.8rem;
