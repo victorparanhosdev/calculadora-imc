@@ -22,7 +22,8 @@ main > div {
     padding: 4.8rem 6.4rem 6.4rem;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.4rem 0 #0000001A;
-    width: min(42.8rem, 100vw)
+    width: min(42.8rem, 100vw);
+    position: relative;
 }
 
 body, input, button {
@@ -150,7 +151,7 @@ background: linear-gradient( #DCE2E9, #DCE2E9) padding-box, linear-gradient(90de
 }
 
 .modal {
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
     display: grid;
