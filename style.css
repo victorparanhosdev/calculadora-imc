@@ -34,7 +34,7 @@ body, input, button {
 
 }
 .modal-box form{
-   width: 30rem; 
+   max-width: 30rem; 
 }
 
 .modal-box form div + div {
@@ -212,9 +212,7 @@ span {
 
 
 @media (max-width: 500px){
-    :root {
-        font-size: 48%;
-    }
+  
     .result {
         padding: 5rem 4rem;
     }
