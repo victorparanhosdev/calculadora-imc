@@ -17,7 +17,7 @@ body {
    
     
 }
-main {
+main > div {
     background-color: #FFFFFF;
     padding: 4.8rem 6.4rem 6.4rem;
     border-radius: 0.6rem;
