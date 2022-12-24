@@ -61,12 +61,7 @@ function IMC(peso, altura){
 Menu.caixaAltura.oninput = () => Menu.alertError.classList.remove("erro")
 Menu.caixaPeso.oninput = () => Menu.alertError.classList.remove("erro")
 
-window.addEventListener("keydown", event => {
-    if(event.key === 'Escape'){
-        Menu.close()
-    }
 
-}
-)
+
 
 
