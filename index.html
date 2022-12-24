@@ -13,31 +13,36 @@
 <body>
 
     <main>
-        <div class="modal-box">
-            <h1 class="title-1">Cálculo de IMC</h1>
 
-            <div>
-                <label for="input-weight">Peso (kg)</label>
-                <input type="number" name="" id="input-weight" placeholder="60">
+        <div>
+            <div class="modal-box">
+                <h1 class="title-1">Cálculo de IMC</h1>
+    
+                <div>
+                    <label for="input-weight">Peso (kg)</label>
+                    <input type="number" name="" id="input-weight" placeholder="60">
+                </div>
+                <div>
+                    <label for="input-height">Altura (m)</label>
+                    <input type="number" name="" id="input-height" placeholder="165">
+                </div>
+    
+                <button id="btn-calculo" type="button">
+                    <p>Calcular IMC</p> <img src="./assets/arrow-up-right.svg" alt="">
+                </button>
+    
             </div>
-            <div>
-                <label for="input-height">Altura (m)</label>
-                <input type="number" name="" id="input-height" placeholder="165">
+    
+            <div class="alert-error">Digite somente números</div>
+    
+            <div class="modal">
+                <div class="result" >
+                   <h1>Seu IMC é de 24.89kg/m2 <br>Magreza</h1><img class="img-close" src="./assets/fechar.svg" alt="">
+                </div>
+                
             </div>
 
-            <button id="btn-calculo" type="button">
-                <p>Calcular IMC</p> <img src="./assets/arrow-up-right.svg" alt="">
-            </button>
 
-        </div>
-
-        <div class="alert-error">Digite somente números</div>
-
-        <div class="modal">
-            <div class="result" >
-               <h1>Seu IMC é de 24.89kg/m2 <br>Magreza</h1><img class="img-close" src="./assets/fechar.svg" alt="">
-            </div>
-            
         </div>
 
 
